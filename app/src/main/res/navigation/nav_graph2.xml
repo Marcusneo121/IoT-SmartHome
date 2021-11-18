@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph2"
+    app:startDestination="@id/SplashScreen">
+
+    <fragment
+        android:id="@+id/SplashScreen"
+        android:name="my.edu.tarc.iotassignmentg11.SplashScreenFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_splashscreen">
+        <action
+            android:id="@+id/action_SplashScreen_to_signIn"
+            app:destination="@id/signIn" />
+    </fragment>
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="my.edu.tarc.iotassignmentg11.HomeFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_aircond"
+            app:destination="@id/aircond" />
+        <action
+            android:id="@+id/action_HomeFragment_to_camera"
+            app:destination="@id/camera" />
+        <action
+            android:id="@+id/action_HomeFragment_to_intrusionDetect"
+            app:destination="@id/intrusionDetect" />
+        <action
+            android:id="@+id/action_HomeFragment_to_report"
+            app:destination="@id/report" />
+        <action
+            android:id="@+id/action_HomeFragment_to_signIn"
+            app:destination="@id/signIn" />
+        <action
+            android:id="@+id/action_HomeFragment_to_petCare"
+            app:destination="@id/petCare" />
+    </fragment>
+    <fragment
+        android:id="@+id/aircond"
+        android:name="my.edu.tarc.iotassignmentg11.Aircond"
+        android:label="Air-Con Control"
+        tools:layout="@layout/fragment_aircon" />
+    <fragment
+        android:id="@+id/feedPet"
+        android:name="my.edu.tarc.iotassignmentg11.FeedPet"
+        android:label="Feed Pet"
+        tools:layout="@layout/fragment_feed_pet" >
+        <action
+            android:id="@+id/action_feedPet_to_autopoop"
+            app:destination="@id/autopoop" />
+    </fragment>
+    <fragment
+        android:id="@+id/camera"
+        android:name="my.edu.tarc.iotassignmentg11.Camera"
+        android:label="CCTV"
+        tools:layout="@layout/fragment_camera" />
+    <fragment
+        android:id="@+id/intrusionDetect"
+        android:name="my.edu.tarc.iotassignmentg11.IntrusionDetect"
+        android:label="Intrusion Detect"
+        tools:layout="@layout/fragment_intrusion_detect" >
+        <action
+            android:id="@+id/action_intrusionDetect_to_intrusionDetectDoor"
+            app:destination="@id/intrusionDetectDoor" />
+    </fragment>
+    <fragment
+        android:id="@+id/intrusionDetectDoor"
+        android:name="my.edu.tarc.iotassignmentg11.IntrusionDetectDoor"
+        android:label="Intrusion Detect Door"
+        tools:layout="@layout/fragment_intrusion_door" />
+
+    <fragment
+        android:id="@+id/report"
+        android:name="my.edu.tarc.iotassignmentg11.report"
+        android:label="Report"
+        tools:layout="@layout/fragment_report" >
+        <action
+            android:id="@+id/action_report_to_aircondReport"
+            app:destination="@id/aircondReport" />
+        <action
+            android:id="@+id/action_report_to_petCareReport"
+            app:destination="@id/petCareReport" />
+        <action
+            android:id="@+id/action_report_to_intrusionReport"
+            app:destination="@id/intrusionReport" />
+        <action
+            android:id="@+id/action_report_to_cctvRecord"
+            app:destination="@id/cctvRecord" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="my.edu.tarc.iotassignmentg11.Register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_register_to_signIn"
+            app:destination="@id/signIn" />
+    </fragment>
+    <fragment
+        android:id="@+id/signIn"
+        android:name="my.edu.tarc.iotassignmentg11.SignIn"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signIn_to_register"
+            app:destination="@id/register" />
+        <action
+            android:id="@+id/action_signIn_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aircondReport"
+        android:name="my.edu.tarc.iotassignmentg11.AircondReport"
+        android:label="Aircond Report"
+        tools:layout="@layout/fragment_aircond_report">
+        <action
+            android:id="@+id/action_aircondReport_to_aircondReportOnOff"
+            app:destination="@id/aircondReportOnOff" />
+        <action
+            android:id="@+id/action_aircondReport_to_aircondReportTemp"
+            app:destination="@id/aircondReportTemp" />
+    </fragment>
+    <fragment
+        android:id="@+id/autopoop"
+        android:name="my.edu.tarc.iotassignmentg11.AutoPoop"
+        android:label="Auto Poop"
+        tools:layout="@layout/fragment_auto_pooping_pad" />
+    <fragment
+        android:id="@+id/feedRecord"
+        android:name="my.edu.tarc.iotassignmentg11.feedRecord"
+        android:label="Feed Record"
+        tools:layout="@layout/fragment_feed_record" />
+    <fragment
+        android:id="@+id/autoPoopRecord"
+        android:name="my.edu.tarc.iotassignmentg11.AutoPoopReport"
+        android:label="Auto Poop Record"
+        tools:layout="@layout/fragment_auto_poop_report" />
+
+    <fragment
+        android:id="@+id/petCareReport"
+        android:name="my.edu.tarc.iotassignmentg11.PetCareReport"
+        android:label="Pet Care Report"
+        tools:layout="@layout/fragment_pet_care" >
+        <action
+            android:id="@+id/action_petCareReport_to_autoPoopRecord"
+            app:destination="@id/autoPoopRecord" />
+        <action
+            android:id="@+id/action_petCareReport_to_feedRecord"
+            app:destination="@id/feedRecord" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/petCare"
+        android:name="my.edu.tarc.iotassignmentg11.PetCare"
+        android:label="Pet Care"
+        tools:layout="@layout/fragment_pet_care" >
+        <action
+            android:id="@+id/action_petCare_to_feedPet"
+            app:destination="@id/feedPet" />
+        <action
+            android:id="@+id/action_petCare_to_autopoop"
+            app:destination="@id/autopoop" />
+    </fragment>
+    <fragment
+        android:id="@+id/aircondReportOnOff"
+        android:name="my.edu.tarc.iotassignmentg11.AircondReportOnOff"
+        android:label="Aircond On Off Records"
+        tools:layout="@layout/fragment_aircond_report_on_off" />
+    <fragment
+        android:id="@+id/aircondReportTemp"
+        android:name="my.edu.tarc.iotassignmentg11.AircondReportTemp"
+        android:label="Aircond Temp Change Records"
+        tools:layout="@layout/fragment_aircond_report_temp" />
+    <fragment
+        android:id="@+id/intrusionReport"
+        android:name="my.edu.tarc.iotassignmentg11.IntrusionReport"
+        android:label="Intrusion Report" >
+        <action
+            android:id="@+id/action_intrusionReport_to_intrusionReportAlarmStatus"
+            app:destination="@id/intrusionReportAlarmStatus" />
+        <action
+            android:id="@+id/action_intrusionReport_to_intrusionReportDetection"
+            app:destination="@id/intrusionReportDetection" />
+        <action
+            android:id="@+id/action_intrusionReport_to_intrusionReportDoorStatus"
+            app:destination="@id/intrusionReportDoorStatus" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/intrusionReportDetection"
+        android:name="my.edu.tarc.iotassignmentg11.IntrusionReportDetection"
+        android:label="Intrusion Detection Report" />
+    <fragment
+        android:id="@+id/intrusionReportAlarmStatus"
+        android:name="my.edu.tarc.iotassignmentg11.IntrusionReportAlarmStatus"
+        android:label="Intrusion Alarm Status Report" />
+    <fragment
+        android:id="@+id/intrusionReportDoorStatus"
+        android:name="my.edu.tarc.iotassignmentg11.IntrusionReportDoorStatus"
+        android:label="Intrusion Door Status Report" />
+    <fragment
+        android:id="@+id/cctvRecord"
+        android:name="my.edu.tarc.iotassignmentg11.cctvRecord"
+        android:label="CCTV Records"
+        tools:layout="@layout/fragment_camera_record" />
+
+
+</navigation>

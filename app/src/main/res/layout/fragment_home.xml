@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <TextView
+        android:id="@+id/textIntrusion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Intrusion Detect"
+        android:textColor="#2C2C2C"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivIntrusion"
+        app:layout_constraintStart_toStartOf="@+id/ivIntrusion"
+        app:layout_constraintTop_toBottomOf="@+id/ivIntrusion" />
+
+    <TextView
+        android:id="@+id/textAircon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Air-Con"
+        android:textColor="#2C2C2C"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivAircond"
+        app:layout_constraintStart_toStartOf="@+id/ivAircond"
+        app:layout_constraintTop_toBottomOf="@+id/ivAircond" />
+
+    <TextView
+        android:id="@+id/textCCTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="CCTV"
+        android:textColor="#2C2C2C"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivCamera"
+        app:layout_constraintStart_toStartOf="@+id/ivCamera"
+        app:layout_constraintTop_toBottomOf="@+id/ivCamera" />
+
+    <TextView
+        android:id="@+id/textReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Report"
+        android:textColor="#2C2C2C"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivReport"
+        app:layout_constraintStart_toStartOf="@+id/ivReport"
+        app:layout_constraintTop_toBottomOf="@+id/ivReport" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="114dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Logout"
+        android:textColor="#EDEDED"
+        android:textSize="17sp"
+        app:backgroundTint="#1E75BB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivAircond"
+        android:layout_width="127dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="110dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wind" />
+
+    <TextView
+        android:id="@+id/textPetFeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Pet Care"
+        android:textColor="#2C2C2C"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivPet"
+        app:layout_constraintStart_toStartOf="@+id/ivPet"
+        app:layout_constraintTop_toBottomOf="@+id/ivPet" />
+
+    <ImageView
+        android:id="@+id/ivPet"
+        android:layout_width="127dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/textPetFeed"
+        app:layout_constraintStart_toEndOf="@+id/ivAircond"
+        app:layout_constraintTop_toTopOf="@+id/ivAircond"
+        app:layout_constraintVertical_bias="0.312"
+        app:srcCompat="@drawable/doglogo" />
+
+    <ImageView
+        android:id="@+id/ivIntrusion"
+        android:layout_width="127dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="32dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="@+id/ivPet"
+        app:layout_constraintStart_toStartOf="@+id/ivPet"
+        app:layout_constraintTop_toBottomOf="@+id/textPetFeed"
+        app:srcCompat="@drawable/alarm" />
+
+    <ImageView
+        android:id="@+id/ivReport"
+        android:layout_width="127dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="32dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCCTV"
+        app:srcCompat="@drawable/report" />
+
+    <ImageView
+        android:id="@+id/ivCamera"
+        android:layout_width="127dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivAircond"
+        app:layout_constraintStart_toStartOf="@+id/ivAircond"
+        app:layout_constraintTop_toBottomOf="@+id/textAircon"
+        app:srcCompat="@drawable/camera" />
+
+    <TextView
+        android:id="@+id/tvWelcomeMessage"
+        style="@style/labelFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textColor="#1E75BB"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

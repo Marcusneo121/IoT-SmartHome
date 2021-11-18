@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".report">
+
+    <TextView
+        android:id="@+id/textAirconReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Air-Con Report"
+        android:textColor="#2C2C2C"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivAircondReport"
+        app:layout_constraintStart_toStartOf="@+id/ivAircondReport"
+        app:layout_constraintTop_toBottomOf="@+id/ivAircondReport" />
+
+    <TextView
+        android:id="@+id/textCCTVReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="CCTV Report"
+        android:textColor="#2C2C2C"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivCameraReport"
+        app:layout_constraintStart_toStartOf="@+id/ivCameraReport"
+        app:layout_constraintTop_toBottomOf="@+id/ivCameraReport" />
+
+    <ImageView
+        android:id="@+id/ivAircondReport"
+        android:layout_width="127dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="100dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wind" />
+
+    <TextView
+        android:id="@+id/textPetFeedReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Feed Pet Report"
+        android:textColor="#2C2C2C"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivPetCare"
+        app:layout_constraintStart_toStartOf="@+id/ivPetCare"
+        app:layout_constraintTop_toBottomOf="@+id/ivPetCare" />
+
+    <ImageView
+        android:id="@+id/ivPetCare"
+        android:layout_width="127dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/textPetFeedReport"
+        app:layout_constraintStart_toEndOf="@+id/ivAircondReport"
+        app:layout_constraintTop_toTopOf="@+id/ivAircondReport"
+        app:layout_constraintVertical_bias="0.312"
+        app:srcCompat="@drawable/doglogo" />
+
+    <ImageView
+        android:id="@+id/ivIntrusionReport"
+        android:layout_width="127dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        app:layout_constraintStart_toEndOf="@+id/ivCameraReport"
+        app:layout_constraintTop_toBottomOf="@+id/textPetFeedReport"
+        app:srcCompat="@drawable/alarm" />
+
+    <TextView
+        android:id="@+id/textIntrusionReport"
+        android:layout_width="148dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="Intrusion Detect Report"
+        android:textColor="#2C2C2C"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivIntrusionReport"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="@+id/ivIntrusionReport"
+        app:layout_constraintTop_toBottomOf="@+id/ivIntrusionReport" />
+
+    <ImageView
+        android:id="@+id/ivCameraReport"
+        android:layout_width="127dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivAircondReport"
+        app:layout_constraintStart_toStartOf="@+id/ivAircondReport"
+        app:layout_constraintTop_toBottomOf="@+id/textAirconReport"
+        app:srcCompat="@drawable/camera" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

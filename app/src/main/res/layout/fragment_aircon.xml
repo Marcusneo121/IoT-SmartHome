@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Aircond">
+
+    <TextView
+        android:id="@+id/tvTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/labelTemp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toEndOf="@+id/labelTemp"
+        app:layout_constraintTop_toTopOf="@+id/labelTemp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvAirconStatus"
+        style="@style/labelFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Off"
+        app:layout_constraintBottom_toBottomOf="@+id/labelAirStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toEndOf="@+id/labelAirStatus"
+        app:layout_constraintTop_toTopOf="@+id/labelAirStatus"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvHouseTemp"
+        style="@style/labelFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reading..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toEndOf="@+id/labelHouseTemp"
+        app:layout_constraintTop_toTopOf="@+id/labelHouseTemp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/aircondLottie"
+        android:layout_width="550sp"
+        android:layout_height="220sp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintDimensionRatio="1.5:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.4"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/airconditioner" />
+
+    <Button
+        android:id="@+id/btnToggle"
+        style="@style/labelFontStyle"
+        android:layout_width="333dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="28dp"
+        android:text="Turn On Aircon"
+        android:textColor="#2C2C2C"
+        android:textSize="18sp"
+        app:backgroundTint="#ABE3FB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/labelAirStatus"
+        style="@style/labelFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="24dp"
+        android:text="Air-con Status : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aircondLottie" />
+
+    <TextView
+        android:id="@+id/labelHouseTemp"
+        style="@style/labelFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="16dp"
+        android:text="House Temperature : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelAirStatus" />
+
+    <TextView
+        android:id="@+id/labelTemp"
+        style="@style/labelFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="8dp"
+        android:text="AC Temperature : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnApply" />
+
+    <TextView
+        android:id="@+id/labelOnWhen"
+        style="@style/labelFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="16dp"
+        android:text="Turn on when (°C) : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelHouseTemp" />
+
+    <TextView
+        android:id="@+id/tvTempSet"
+        style="@style/labelFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_alternates_bold"
+        android:text="24"
+        android:textSize="48sp"
+        app:layout_constraintStart_toEndOf="@+id/btnMinus"
+        app:layout_constraintTop_toBottomOf="@+id/tvTemperature" />
+
+    <TextView
+        android:id="@+id/celcius"
+        style="@style/labelFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="°C"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/tvTempSet"
+        app:layout_constraintTop_toTopOf="@+id/tvTempSet" />
+
+    <TextView
+        android:id="@+id/celcius3"
+        style="@style/labelFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="°C"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/tvHouseTemp"
+        app:layout_constraintTop_toTopOf="@+id/tvHouseTemp" />
+
+    <Button
+        android:id="@+id/btnMinus"
+        style="@style/labelFontStyle"
+        android:layout_width="70dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="8dp"
+        android:text="-"
+        android:textSize="34sp"
+        app:backgroundTint="#ABE3FB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelTemp" />
+
+    <Button
+        android:id="@+id/btnPlus"
+        style="@style/labelFontStyle"
+        android:layout_width="70dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:text="+"
+        android:textSize="34sp"
+        app:backgroundTint="#ABE3FB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/celcius"
+        app:layout_constraintTop_toBottomOf="@+id/tvTemperature" />
+
+    <EditText
+        android:id="@+id/etSetAircondTemp"
+        style="@style/labelFontStyle"
+        android:layout_width="49dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="30"
+        android:inputType="number"
+        android:text="30"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/labelOnWhen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toEndOf="@+id/labelOnWhen"
+        app:layout_constraintTop_toTopOf="@+id/labelOnWhen"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="75dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="apply"
+        android:textSize="12sp"
+        app:backgroundTint="#ABE3FB"
+        app:layout_constraintEnd_toEndOf="@+id/etSetAircondTemp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/labelOnWhen"
+        app:layout_constraintTop_toBottomOf="@+id/etSetAircondTemp" />
+
+    <Switch
+        android:id="@+id/switchOpenFeature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="8dp"
+        android:checked="true"
+        app:layout_constraintBottom_toBottomOf="@+id/etSetAircondTemp"
+        app:layout_constraintStart_toEndOf="@+id/etSetAircondTemp"
+        app:layout_constraintTop_toTopOf="@+id/etSetAircondTemp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

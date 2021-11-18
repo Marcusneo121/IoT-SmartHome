@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntrusionReport">
+
+    <ImageView
+        android:id="@+id/ivIntrusion"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/motionsensor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivAlarmStatus"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/alarmcolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIntrusion" />
+
+    <TextView
+        android:id="@+id/tvIntrusion"
+        style="@style/labelFontStyle"
+        android:layout_width="183dp"
+        android:layout_height="59dp"
+        android:gravity="center"
+        android:text="View Intrusion Detection Records"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivIntrusion"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="@+id/ivIntrusion"
+        app:layout_constraintTop_toBottomOf="@+id/ivIntrusion" />
+
+    <TextView
+        android:id="@+id/tvAlarmStatus"
+        style="@style/labelFontStyle"
+        android:layout_width="183dp"
+        android:layout_height="59dp"
+        android:gravity="center"
+        android:text="View Alarm Status Records"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivAlarmStatus"
+        app:layout_constraintStart_toStartOf="@+id/ivAlarmStatus"
+        app:layout_constraintTop_toBottomOf="@+id/ivAlarmStatus" />
+
+    <TextView
+        android:id="@+id/tvDoorStatus"
+        style="@style/labelFontStyle"
+        android:layout_width="183dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="View Door Status Records"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ivDoorStatus"
+        app:layout_constraintStart_toStartOf="@+id/ivDoorStatus"
+        app:layout_constraintTop_toBottomOf="@+id/ivDoorStatus" />
+
+    <ImageView
+        android:id="@+id/ivDoorStatus"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/door"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAlarmStatus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

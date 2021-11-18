@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntrusionDetectDoor">
+
+
+    <ImageView
+        android:id="@+id/imgViewDoorOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/dooropen"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCheckDoorStatus" />
+
+    <ImageView
+        android:id="@+id/imgViewDoorLock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/doorlock"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCheckDoorStatus" />
+
+    <TextView
+        android:id="@+id/tvDoorDT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Date and Time"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/imgViewDoorOpen"
+        app:layout_constraintStart_toStartOf="@+id/imgViewDoorOpen"
+        app:layout_constraintTop_toBottomOf="@+id/tvDoorIs" />
+
+    <TextView
+        android:id="@+id/tvDoorDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="#0E0E0E"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/tvDoorDT"
+        app:layout_constraintStart_toStartOf="@+id/tvDoorDT"
+        app:layout_constraintTop_toBottomOf="@+id/tvDoorDT" />
+
+    <TextView
+        android:id="@+id/tvDoorIs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Door is"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/imgViewDoorOpen"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewDoorOpen" />
+
+    <TextView
+        android:id="@+id/tvDStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="CLOSE"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDoorIs"
+        app:layout_constraintStart_toEndOf="@+id/tvDoorIs"
+        app:layout_constraintTop_toTopOf="@+id/tvDoorIs" />
+
+    <Button
+        android:id="@+id/btnCheckDoorStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Check Door"
+        app:backgroundTint="#ABE3FB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivCheckDoorStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/checkdoor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCheckDoorStatus" />
+</androidx.constraintlayout.widget.ConstraintLayout>

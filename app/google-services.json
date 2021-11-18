@@ -1,0 +1,127 @@
+{
+  "project_info": {
+    "project_number": "1052118980120",
+    "firebase_url": "https://bait2123-202105-12-2-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "bait2123-202105-12-2",
+    "storage_bucket": "bait2123-202105-12-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052118980120:android:4bde88231851d60cfbd56d",
+        "android_client_info": {
+          "package_name": "com.example.smartpantry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052118980120-9a1d99gkg9k70qjmmop4jn9h478pkm4p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAco4SJkkmEviOiaRSz4jQLrXwhdAAy1C4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052118980120-9a1d99gkg9k70qjmmop4jn9h478pkm4p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052118980120:android:aea1ce6ab9bd5e8ffbd56d",
+        "android_client_info": {
+          "package_name": "my.com.iotasgmsmarthome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052118980120-9a1d99gkg9k70qjmmop4jn9h478pkm4p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAco4SJkkmEviOiaRSz4jQLrXwhdAAy1C4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052118980120-9a1d99gkg9k70qjmmop4jn9h478pkm4p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052118980120:android:167a2880a58c4522fbd56d",
+        "android_client_info": {
+          "package_name": "my.edu.tarc.iotassignmentg11"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052118980120-9a1d99gkg9k70qjmmop4jn9h478pkm4p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAco4SJkkmEviOiaRSz4jQLrXwhdAAy1C4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052118980120-9a1d99gkg9k70qjmmop4jn9h478pkm4p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052118980120:android:b25e7284cc9b507dfbd56d",
+        "android_client_info": {
+          "package_name": "my.edu.tarc.smarthome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052118980120-9a1d99gkg9k70qjmmop4jn9h478pkm4p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAco4SJkkmEviOiaRSz4jQLrXwhdAAy1C4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052118980120-9a1d99gkg9k70qjmmop4jn9h478pkm4p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

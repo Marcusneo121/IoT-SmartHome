@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AircondReport">
+
+    <ImageView
+        android:id="@+id/ivTempChange"
+        android:layout_width="178dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="124dp"
+        android:src="@drawable/thermometer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivOnOff"
+        android:layout_width="178dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/onoff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTempChangeLabel" />
+
+    <TextView
+        android:id="@+id/tvTempChangeLabel"
+        style="@style/labelFontStyle"
+        android:layout_width="183dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="View Temperature Change Records"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivTempChange" />
+
+    <TextView
+        android:id="@+id/tvOnOffLabel"
+        style="@style/labelFontStyle"
+        android:layout_width="183dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/labelReportOnOff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivOnOff" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

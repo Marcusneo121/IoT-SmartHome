@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntrusionDetect">
+
+    <ImageView
+        android:id="@+id/imgSnap"
+        android:layout_width="209dp"
+        android:layout_height="163dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/cctv123"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameContent" />
+
+    <ImageButton
+        android:id="@+id/btnContact"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/telephone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgViewSecure"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/shield"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Switch"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgViewSecure"
+        app:layout_constraintStart_toStartOf="@+id/imgViewSecure"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewSecure" />
+
+    <ImageView
+        android:id="@+id/imgViewInsecure"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/noshield"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameContent"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#ABE3FB"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/btnShow"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:text="Sound"
+            android:textColor="#0E0E0E"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="50dp"
+            android:text="LED Light"
+            android:textColor="#181819"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="100dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="90dp"
+            android:text="Distance"
+            android:textColor="#151414"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSound"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="5dp"
+            android:text="ON"
+            app:backgroundTint="#03A9F4" />
+
+        <Button
+            android:id="@+id/btnLight"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="45dp"
+            android:text="ON"
+            app:backgroundTint="#3DDDCE" />
+
+        <SeekBar
+            android:id="@+id/seekBarDistance"
+            android:layout_width="250dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="115dp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="86dp" />
+
+        <TextView
+            android:id="@+id/txtViewDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="358dp"
+            android:layout_marginLeft="358dp"
+            android:layout_marginTop="92dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtViewCm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="380dp"
+            android:layout_marginLeft="380dp"
+            android:layout_marginTop="94dp"
+            android:text="CM"
+            android:textSize="14sp" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#ABE3FB"
+        android:gravity="left|center_vertical"
+        android:text="Settings"
+        android:textColor="#313132"
+        android:textStyle="bold"
+        app:backgroundTint="#ABE3FB"
+        app:icon="@android:drawable/arrow_down_float"
+        app:iconGravity="end"
+        app:iconTint="#2E2F30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchBtn" />
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="8dp"
+        android:text="Date:"
+        android:textColor="#1269AF"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDisplayImg" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Distance detected:"
+        android:textColor="#1269AF"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/tv8"
+        app:layout_constraintTop_toBottomOf="@+id/tv9" />
+
+    <TextView
+        android:id="@+id/tv9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Time:"
+        android:textColor="#1269AF"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/tv8"
+        app:layout_constraintTop_toBottomOf="@+id/tv8" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="93dp"
+        android:layout_marginLeft="93dp"
+        android:textColor="#070707"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv8"
+        app:layout_constraintStart_toEndOf="@+id/tv8"
+        app:layout_constraintTop_toTopOf="@+id/tv8" />
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginLeft="90dp"
+        android:textColor="#070707"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv9"
+        app:layout_constraintStart_toEndOf="@+id/tv9"
+        app:layout_constraintTop_toTopOf="@+id/tv9" />
+
+    <TextView
+        android:id="@+id/txtViewDetect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:textColor="#070707"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv3"
+        app:layout_constraintStart_toEndOf="@+id/tv3"
+        app:layout_constraintTop_toTopOf="@+id/tv3" />
+
+    <ImageView
+        android:id="@+id/imgDim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/bulbdim"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/imgAudio"
+        app:layout_constraintTop_toBottomOf="@+id/imgAudio" />
+
+    <ImageView
+        android:id="@+id/imgLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/bulblight"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/imgAudio"
+        app:layout_constraintTop_toBottomOf="@+id/imgAudio" />
+
+    <ImageView
+        android:id="@+id/imgAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/audio"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgMute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/mute"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnDisplayImg"
+        android:layout_width="149dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="8dp"
+        android:background="#ABE3FB"
+        android:text="Refresh Image"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:backgroundTint="#ABE3FB"
+        app:layout_constraintEnd_toEndOf="@+id/imgSnap"
+        app:layout_constraintStart_toStartOf="@+id/imgSnap"
+        app:layout_constraintTop_toBottomOf="@+id/imgSnap" />
+
+    <ImageView
+        android:id="@+id/ivDoorBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/dooricon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnContact" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
